@@ -169,7 +169,7 @@ plt.legend()
 plt.show()
 
 ```
-//INSERT PLOT HERE
+[View Visual](Screenshot 2025-04-17 171325.png)
 
 You can see that the data is not as correlated as you may expect, but you can use an R-Squared score to determine how correlated these values are (1 being perfect correlation, 0 being no correlation), this R-Squared score of about .53 indicates a weak Linear correlation to these variables. These Variables may have an Inverse Relationships
 
