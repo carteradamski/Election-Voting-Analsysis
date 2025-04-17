@@ -209,11 +209,11 @@ plt.show()
 print(f"Model: IncomePerCap = {model_inverse.intercept_:.2f} + {model_inverse.coef_[0]:.2f} * (1/Poverty)")
 print(f"R² Score (Inverse Model): {r2:.4f}")
 ```
-//INSERT INVERSE PLOT HERE
+[View Visual](Screenshot 2025-04-17 170511.png)
 
 As you can see, the Inverse Plot has an even weaker correlation. These correlations, or lack of correlations, show that you can't use IncomePerCapita as a relaible metric to determine the financial well-being of a county, because a county with a High IncomePerCapita could mean that either the wealth is concentrated to a few people, leaving a high number in poverty, or that the wealth is spread evenly and that few in the county are in poverty, You can also see the lack of connection between IncomePerCapita and Unemployment
 
-//INSERT UNEMPLOYMENT VS INCOMEPERCAP GRAPH
+[View Visual](Screenshot 2025-04-17 170801.png)
 
 -**Conclusion:** In the future, we can't make broad assumptions regarding the wealth of Counties based only on how Wealthy it's average person is, since it has been proven that wellness markers such as Unemployment and Poverty are not correlated to IncomePerCapita
 
