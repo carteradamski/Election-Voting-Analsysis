@@ -132,7 +132,7 @@ Each state reveals stark differences in party dominance at the county level — 
 - **Urban vs. Rural:** Urban centers overwhelmingly favored Democrats, while rural counties leaned Republican — a pattern tied to both income and education levels.
 
 
-## Week 5: Using Regression to try and Make Sense of Data
+## Using Regression to try and Make Sense of Data
 
 - **Using Linear Regression** Take two values you may consider to be heavily correlated, Poverty rate in a county and IncomePerCapita in the same county, You would think these two values would heavily correlate, but as you can see from the Linear Regression Model, that is not true, one big takeaway from using regression is to isolate two variables and see how well each of them correlate.
 
@@ -219,12 +219,9 @@ As you can see, the Inverse Plot has an even weaker correlation. These correlati
 
 
 
-## Week 6
 
 
-
-
-## Week 7: Modeling the Influence of Socioeconomic Factors on Voter Behavior
+## Modeling the Influence of Socioeconomic Factors on Voter Behavior
 
 To complement our geospatial analysis, we implemented regression and classification models to **quantify the relationship between income, unemployment, and voting behavior** at the county level. Our goal was to assess whether employment and other socioeconomic features can predict **income levels**, and by extension, voter turnout and influence.
 
