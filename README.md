@@ -32,7 +32,7 @@ plt.show()
 ```
 
 **Visualization:**
-<!-- INSERT BAR PLOT OF TOTAL VOTES PER STATE HERE -->
+[View Interactive Plot](
 
 ---
 
@@ -64,7 +64,7 @@ fig.show()
 ```
 
 **Visualization:**
-<!-- INSERT STATE-LEVEL CHOROPLETH MAP HERE -->
+[View Visual Plot](statelevelelectionresults.html)
 
 ---
 
@@ -98,7 +98,7 @@ fig.show()
 ```
 
 **Visualization:**
-<!-- INSERT COUNTY-LEVEL CHOROPLETH MAP HERE -->
+[View Interactive Plot](countyresults.html)
 
 ---
 
