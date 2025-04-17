@@ -132,9 +132,91 @@ Each state reveals stark differences in party dominance at the county level — 
 - **Urban vs. Rural:** Urban centers overwhelmingly favored Democrats, while rural counties leaned Republican — a pattern tied to both income and education levels.
 
 
-## Week 5
+## Week 5: Using Regression to try and Make Sense of Data
+
+- **Using Linear Regression** Take two values you may consider to be heavily correlated, Poverty rate in a county and IncomePerCapita in the same county, You would think these two values would heavily correlate, but as you can see from the Linear Regression Model, that is not true, one big takeaway from using regression is to isolate two variables and see how well each of them correlate.
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score
+df = pd.read_csv("/content/week3_dataset.csv")
+X_simple = df[['Poverty']].values
+
+# Set y to the dependent variable
+y = df['IncomePerCap'].values
+
+# Create and fit the model
+
+model_simple = LinearRegression()
+model_simple.fit(X_simple, y)
+
+
+# Predict IncomePerCap using the simple linear regression model
+y_simple_pred = model_simple.predict(X_simple)
+r2 = r2_score(y, y_simple_pred)
+
+#Plot the Simple Linear Regression
+plt.scatter(X_simple, y, color='blue', alpha=0.3, label="Actual Data")
+plt.plot(X_simple, y_simple_pred, color='red', linewidth=2, label="Predicted Line")
+plt.xlabel("Poverty")
+plt.ylabel("IncomePerCap")
+plt.title(f"Inverse Relationship: Poverty vs. IncomePerCap\nR² = {r2:.4f}")
+plt.legend()
+plt.show()
+
+```
+//INSERT PLOT HERE
+
+You can see that the data is not as correlated as you may expect, but you can use an R-Squared score to determine how correlated these values are (1 being perfect correlation, 0 being no correlation), this R-Squared score of about .53 indicates a weak Linear correlation to these variables. These Variables may have an Inverse Relationships
+```python
+# Use provided DataFrame columns
+X_raw = df[['Poverty']].values
+y = df['IncomePerCap'].values
+
+# Transform X to its inverse (avoid divide-by-zero)
+X_inverse = 1 / (X_raw + 1e-5)
+
+# Fit inverse model
+model_inverse = LinearRegression()
+model_inverse.fit(X_inverse, y)
+
+# Predict on training data for R²
+y_pred_train = model_inverse.predict(X_inverse)
+r2 = r2_score(y, y_pred_train)
+
+# Create smooth curve for plotting
+X_plot = np.linspace(X_raw.min(), X_raw.max(), 300).reshape(-1, 1)
+X_plot_inverse = 1 / (X_plot + 1e-5)
+y_plot_pred = model_inverse.predict(X_plot_inverse)
+
+# Plot
+plt.scatter(X_raw, y, color='blue', alpha=0.3, label="Actual Data")
+plt.plot(X_plot, y_plot_pred, color='red', linewidth=2, label="Inverse Fit Curve")
+plt.xlabel("Poverty")
+plt.ylabel("IncomePerCap")
+plt.title(f"Inverse Relationship: Poverty vs. IncomePerCap\nR² = {r2:.4f}")
+plt.legend()
+plt.show()
+
+# Print model and score
+print(f"Model: IncomePerCap = {model_inverse.intercept_:.2f} + {model_inverse.coef_[0]:.2f} * (1/Poverty)")
+print(f"R² Score (Inverse Model): {r2:.4f}")
+```
+//INSERT INVERSE PLOT HERE
+
+As you can see, the Inverse Plot has an even weaker correlation. These correlations, or lack of correlations, show that you can't use IncomePerCapita as a relaible metric to determine the financial well-being of a county, because a county with a High IncomePerCapita could mean that either the wealth is concentrated to a few people, leaving a high number in poverty, or that the wealth is spread evenly and that few in the county are in poverty, You can also see the lack of connection between IncomePerCapita and Unemployment
+
+//INSERT UNEMPLOYMENT VS INCOMEPERCAP GRAPH
+
+-**Conclusion:** In the future, we can't make broad assumptions regarding the wealth of Counties based only on how Wealthy it's average person is, since it has been proven that wellness markers such as Unemployment and Poverty are not correlated to IncomePerCapita
+
+
 
 ## Week 6
+
+
+
 
 ## Week 7: Modeling the Influence of Socioeconomic Factors on Voter Behavior
 
@@ -289,7 +371,6 @@ https://www.vox.com/politics/403364/tik-tok-young-voters-2024-election-democrats
 
 https://apnews.com/article/georgia-voters-nonvoters-election-34209a5bba0b2697eb6fcdd004dca584
 ## conclusion
-
 
 
 
