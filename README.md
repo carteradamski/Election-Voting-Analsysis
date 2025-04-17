@@ -135,6 +135,9 @@ Each state reveals stark differences in party dominance at the county level — 
 ## Week 5: Using Regression to try and Make Sense of Data
 
 - **Using Linear Regression** Take two values you may consider to be heavily correlated, Poverty rate in a county and IncomePerCapita in the same county, You would think these two values would heavily correlate, but as you can see from the Linear Regression Model, that is not true, one big takeaway from using regression is to isolate two variables and see how well each of them correlate.
+
+
+
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -169,6 +172,9 @@ plt.show()
 //INSERT PLOT HERE
 
 You can see that the data is not as correlated as you may expect, but you can use an R-Squared score to determine how correlated these values are (1 being perfect correlation, 0 being no correlation), this R-Squared score of about .53 indicates a weak Linear correlation to these variables. These Variables may have an Inverse Relationships
+
+
+
 ```python
 # Use provided DataFrame columns
 X_raw = df[['Poverty']].values
