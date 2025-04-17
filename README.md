@@ -4,7 +4,6 @@
 
 ## research question
 
-## Week 4
 
 # How Do Income Level and Employment Influence Voter Turnout and Voter Influence in the 2020 U.S. Election?
 
@@ -108,26 +107,19 @@ fig.show()
 To better understand how regional economic characteristics may impact electoral outcomes, we zoom into key swing and representative states:
 
 #### Michigan
-<!-- INSERT MICHIGAN COUNTY MAP -->
-
+[View Interactive Plot](mdstw25/michigancountyresults.html)
 #### Pennsylvania
-<!-- INSERT PENNSYLVANIA COUNTY MAP -->
-
+[View Interactive Plot](mdstw25/pennsylvaniacountyresults.html)
 #### Georgia
-<!-- INSERT GEORGIA COUNTY MAP -->
-
+[View Interactive Plot](mdstw25/georgia.html)
 #### California
-<!-- INSERT CALIFORNIA COUNTY MAP -->
-
+[View Interactive Plot](mdstw25/californiacountyresults.html)
 #### Alabama
-<!-- INSERT ALABAMA COUNTY MAP -->
-
+[View Interactive Plot](mdstw25/alabamacountyresults.html)
 #### Massachusetts
-<!-- INSERT MASSACHUSETTS COUNTY MAP -->
-
+[View Interactive Plot](mdstw25/massachussettscountyresults.html)
 #### Texas
-<!-- INSERT TEXAS COUNTY MAP -->
-
+[View Interactive Plot](mdstw25/texascountyresults.html)
 Each state reveals stark differences in party dominance at the county level — often correlated with urbanization, median income, and employment rates. For instance, wealthier coastal counties in California leaned heavily Democratic, while rural, lower-income counties in Alabama skewed Republican.
 
 ---
@@ -271,8 +263,7 @@ These results indicate that income can be accurately modeled using socioeconomic
 
 ### Visualization
 
-<!-- INSERT IMAGE OF CONFUSION MATRIX HEATMAP HERE -->
-
+![Confusion Matrix Heatmap](mdstw25/confusionmatrix.png)
 ---
 
 ### Interpretation
