@@ -149,7 +149,7 @@ To complement our geospatial analysis, we implemented regression and classificat
 
 ---
 
-### 🔢 Predictive Modeling Approach
+### Predictive Modeling Approach
 
 We applied three machine learning models using county-level features:
 
@@ -241,7 +241,7 @@ plt.show()
 
 ---
 
-### 📈 Model Results
+### Model Results
 
 - **Ridge Regression MSE (Train/Test)**: 4,481,369 / 5,660,370  
 - **Lasso Regression MSE (Train/Test)**: 4,231,566 / 5,442,089  
@@ -252,7 +252,7 @@ These results indicate that income can be accurately modeled using socioeconomic
 
 ---
 
-### 🔍 Coefficient Insights
+### Coefficient Insights
 
 #### Ridge Regression Coefficients (snippet):
 ```text
@@ -269,13 +269,13 @@ These results indicate that income can be accurately modeled using socioeconomic
 
 ---
 
-### 📊 Visualization
+### Visualization
 
 <!-- INSERT IMAGE OF CONFUSION MATRIX HEATMAP HERE -->
 
 ---
 
-### ✏️ Interpretation
+### Interpretation
 
 - **Unemployment and voting behavior**: Counties with higher unemployment were more likely to fall into lower income categories, which may reflect patterns of disengagement or different party alignment.
 - **Regularization Effect**: Lasso zeroed out unimportant features, making it easier to interpret which socioeconomic indicators are most predictive.
