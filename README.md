@@ -64,7 +64,7 @@ fig.show()
 ```
 
 **Visualization:**
-[View Visual Plot](statelevelelectionresults.html)
+[View Visual Plot](state level election results.html)
 
 ---
 
@@ -107,19 +107,19 @@ fig.show()
 To better understand how regional economic characteristics may impact electoral outcomes, we zoom into key swing and representative states:
 
 #### Michigan
-[View Interactive Plot](mdstw25/michigancountyresults.html)
+[View Interactive Plot](michigancountyresults.html)
 #### Pennsylvania
-[View Interactive Plot](mdstw25/pennsylvaniacountyresults.html)
+[View Interactive Plot](pennsylvaniacountyresults.html)
 #### Georgia
-[View Interactive Plot](mdstw25/georgia.html)
+[View Interactive Plot](georgia.html)
 #### California
-[View Interactive Plot](mdstw25/californiacountyresults.html)
+[View Interactive Plot](californiacountyresults.html)
 #### Alabama
-[View Interactive Plot](mdstw25/alabamacountyresults.html)
+[View Interactive Plot](alabamacountyresults.html)
 #### Massachusetts
-[View Interactive Plot](mdstw25/massachussettscountyresults.html)
+[View Interactive Plot](massachussettscountyresults.html)
 #### Texas
-[View Interactive Plot](mdstw25/texascountyresults.html)
+[View Interactive Plot](texascountyresults.html)
 
 Each state reveals stark differences in party dominance at the county level — often correlated with urbanization, median income, and employment rates. For instance, wealthier coastal counties in California leaned heavily Democratic, while rural, lower-income counties in Alabama skewed Republican.
 
@@ -349,7 +349,7 @@ These results indicate that income can be accurately modeled using socioeconomic
 
 ### Visualization
 
-![Confusion Matrix Heatmap](mdstw25/confusionmatrix.png)
+[Confusion Matrix Heatmap](confusionmatrix.png)
 ---
 
 ### Interpretation
