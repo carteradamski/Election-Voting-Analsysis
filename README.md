@@ -32,7 +32,7 @@ plt.show()
 ```
 
 **Visualization:**
-[View Interactive Plot](
+[View Plot](Screenshot 2025-04-18 110543.png)
 
 ---
 
@@ -64,7 +64,7 @@ fig.show()
 ```
 
 **Visualization:**
-[View Visual Plot](state level election results.html)
+[View Visual Plot](Screenshot 2025-04-18 110610.png)
 
 ---
 
@@ -98,7 +98,7 @@ fig.show()
 ```
 
 **Visualization:**
-[View Interactive Plot](countyresults.html)
+[View Plot](Screenshot 2025-04-18 110655.png)
 
 ---
 
@@ -107,19 +107,17 @@ fig.show()
 To better understand how regional economic characteristics may impact electoral outcomes, we zoom into key swing and representative states:
 
 #### Michigan
-[View Interactive Plot](michigancountyresults.html)
+[View Plot](Screenshot 2025-04-18 110709.png)
 #### Pennsylvania
-[View Interactive Plot](pennsylvaniacountyresults.html)
+[View Plot](Screenshot 2025-04-18 110721.png)
 #### Georgia
-[View Interactive Plot](georgia.html)
+[View Plot]Screenshot 2025-04-18 110823.png
 #### California
-[View Interactive Plot](californiacountyresults.html)
+[View Plot](Screenshot 2025-04-18 110732.png)
 #### Alabama
-[View Interactive Plot](alabamacountyresults.html)
-#### Massachusetts
-[View Interactive Plot](massachussettscountyresults.html)
+[View Plot](Screenshot 2025-04-18 110740.png)
 #### Texas
-[View Interactive Plot](texascountyresults.html)
+[View Plot](Screenshot 2025-04-18 110811.png)
 
 Each state reveals stark differences in party dominance at the county level — often correlated with urbanization, median income, and employment rates. For instance, wealthier coastal counties in California leaned heavily Democratic, while rural, lower-income counties in Alabama skewed Republican.
 
