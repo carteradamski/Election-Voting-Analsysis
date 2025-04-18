@@ -27,7 +27,7 @@ plt.show()
 ```
 
 **Visualization:**
-![View Plot](Screenshot 2025-04-18 110543.png)
+[View Plot](Screenshot 2025-04-18 110543.png)
 
 ---
 
