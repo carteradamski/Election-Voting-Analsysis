@@ -27,7 +27,7 @@ plt.show()
 ```
 
 **Visualization:**
-[View Plot](Screenshot 2025-04-18 110543.png)
+![](Screenshot 2025-04-18 110543.png)
 
 ---
 
@@ -58,8 +58,7 @@ fig = px.choropleth(
 fig.show()
 ```
 
-**Visualization:**
-![View Visual Plot](Screenshot 2025-04-18 110610.png)
+![](Screenshot 2025-04-18 110610.png)
 
 ---
 
@@ -93,7 +92,7 @@ fig.show()
 ```
 
 **Visualization:**
-[View Plot](Screenshot 2025-04-18 110655.png)
+![](Screenshot 2025-04-18 110655.png)
 
 ---
 
@@ -102,17 +101,17 @@ fig.show()
 To better understand how regional economic characteristics may impact electoral outcomes, we zoom into key swing and representative states:
 
 #### Michigan
-[View Plot](Screenshot 2025-04-18 110709.png)
+![](Screenshot 2025-04-18 110709.png)
 #### Pennsylvania
-[View Plot](Screenshot 2025-04-18 110721.png)
+![](Screenshot 2025-04-18 110721.png)
 #### Georgia
-[View Plot](Screenshot 2025-04-18 110823.png)
+![](Screenshot 2025-04-18 110823.png)
 #### California
-[View Plot](Screenshot 2025-04-18 110732.png)
+![](Screenshot 2025-04-18 110732.png)
 #### Alabama
-[View Plot](Screenshot 2025-04-18 110740.png)
+![](Screenshot 2025-04-18 110740.png)
 #### Texas
-[View Plot](Screenshot 2025-04-18 110811.png)
+![](Screenshot 2025-04-18 110811.png)
 
 Each state reveals stark differences in party dominance at the county level — often correlated with urbanization, median income, and employment rates. For instance, wealthier coastal counties in California leaned heavily Democratic, while rural, lower-income counties in Alabama skewed Republican.
 
@@ -161,7 +160,7 @@ plt.legend()
 plt.show()
 
 ```
-[View Visual](Screenshot 2025-04-17 171325.png)
+![](Screenshot 2025-04-17 171325.png)
 
 It is apparent that the data is not as correlated as one may expect, but we can use an R-Squared score to determine how correlated these values are (1 being perfect correlation, 0 being no correlation), this R-Squared score of about .53 indicates a weak linear correlation to these variables. These variables may have an inverse relationship.
 
@@ -201,11 +200,11 @@ plt.show()
 print(f"Model: IncomePerCap = {model_inverse.intercept_:.2f} + {model_inverse.coef_[0]:.2f} * (1/Poverty)")
 print(f"R² Score (Inverse Model): {r2:.4f}")
 ```
-[View Visual](Screenshot 2025-04-17 170511.png)
+![](Screenshot 2025-04-17 170511.png)
 
 The inverse plot has an even weaker correlation. This lack of correlation shows that we can't use IncomePerCapita as a relaible metric to determine the financial well-being of a county, because a county with a high IncomePerCapita could mean that either the wealth is concentrated to a few people, leaving a high number in poverty, or that the wealth is spread evenly and that few in the county are in poverty, There is also a lack of connection between IncomePerCapita and Unemployment. 
 
-[View Visual](Screenshot 2025-04-17 170801.png)
+![](Screenshot 2025-04-17 170801.png)
 
 -**Conclusion:** In the future, we can't make broad assumptions regarding the wealth of counties based only on how wealthy it's average person is, since it has been proven that wellness markers such as unemployment and poverty are not correlated to IncomePerCapita
 
@@ -366,7 +365,7 @@ These results indicate that income can be accurately modeled using socioeconomic
 
 ### Visualization
 
-[Confusion Matrix Heatmap](confusionmatrix.png)
+![Confusion Matrix Heatmap](confusionmatrix.png)
 ---
 
 ### Interpretation
