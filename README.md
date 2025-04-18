@@ -1,11 +1,6 @@
 # Election Voter Analysis in 2020 United States Election 
 
-## background info
-
-## research question
-
-
-# How Do Income Level and Employment Influence Voter Turnout and Voter Influence in the 2020 U.S. Election?
+# How Did Income Level and Employment Influence Voter Turnout and Voter Influence in the 2020 U.S. Election?
 
 Understanding the dynamics between socioeconomic status and electoral outcomes helps reveal which demographics drive political power in America. In this section, we explore geospatial patterns in voter turnout and party dominance by income and employment levels across the United States, using data from the 2020 general election.
 
