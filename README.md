@@ -370,7 +370,25 @@ Additionally, a report from the Associated Press highlighted that in Bibb County
 
 These findings align with broader trends observed in the 2024 election, where economic stressors and a perceived disconnect between political parties and working-class concerns contributed to shifts in voter turnout and party allegiance. The interplay between income, employment, and political engagement continues to be a critical factor in shaping electoral outcomes.
 
-https://www.vox.com/politics/403364/tik-tok-young-voters-2024-election-democrats-david-shor
+## Conclusion
+Key Findings:
 
-https://apnews.com/article/georgia-voters-nonvoters-election-34209a5bba0b2697eb6fcdd004dca584
-## conclusion
+**Income and Turnout:** Our analysis revealed a strong positive correlation between median household income and voter turnout across the U.S., particularly in battleground states like Michigan and Pennsylvania. In these states, high-income counties consistently demonstrated greater civic participation. For example, in Michigan, counties like Washtenaw and Oakland—both with above-average incomes—had some of the highest turnout rates in the state.
+**Employment and Party Dominance:** We found a notable association between employment rates and political preference. Counties with higher employment levels tended to vote Republican, while those with lower employment levels leaned Democratic. This trend was especially clear in Alabama and California, where rural, high-employment counties consistently supported Republican candidates.
+Geospatial Trends: County-level choropleth maps revealed geographic clustering of socioeconomic and political trends. Urban, high-income counties generally voted Democratic, while rural, working-class counties skewed Republican. These regional differences were particularly evident in swing states like Pennsylvania, where the urban-rural divide was a strong predictor of party dominance.
+**Predictive Modeling Insights:** Our classification models, trained on employment and income variables, achieved high accuracy in predicting both voter turnout levels and party dominance. This demonstrates the predictive strength of basic socioeconomic indicators when analyzing voting behavior at the county level.
+Conclusion and Future Directions:
+
+Our findings highlight the significant impact of socioeconomic status—specifically income and employment—on electoral participation and political alignment in the 2020 U.S. election. These patterns suggest that economic stability influences not just whether individuals vote, but also which party they support.
+
+# Future Research Suggestions:
+
+**Longitudinal Analysis:** Examining how these relationships evolve across multiple election cycles could reveal whether these trends are persistent or changing over time.
+**Additional Socioeconomic Variables:** Including factors like housing stability and healthcare access could enrich the analysis and offer a more holistic view of voter behavior.
+**Policy Impact Studies:** Investigating how local or national economic policies influenced voter sentiment could provide insights into the feedback loop between governance and electoral behavior.
+By continuing to integrate socioeconomic and spatial data, future research can deepen our understanding of the forces that shape American democracy.
+
+## References
+Fields, Gary. “In Battleground Georgia, Some Poor People See No Reason to Vote. That Decision Could Sway Election.” AP News, AP News, 22 Oct. 2024, apnews.com/article/georgia-voters-nonvoters-election-34209a5bba0b2697eb6fcdd004dca584.
+
+Levitz, Eric. “This Is Why Kamala Harris Really Lost.” Vox, 18 Mar. 2025, www.vox.com/politics/403364/tik-tok-young-voters-2024-election-democrats-david-shor.
