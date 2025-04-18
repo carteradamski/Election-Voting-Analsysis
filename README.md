@@ -111,7 +111,7 @@ To better understand how regional economic characteristics may impact electoral 
 #### Pennsylvania
 [View Plot](Screenshot 2025-04-18 110721.png)
 #### Georgia
-[View Plot]Screenshot 2025-04-18 110823.png
+[View Plot](Screenshot 2025-04-18 110823.png)
 #### California
 [View Plot](Screenshot 2025-04-18 110732.png)
 #### Alabama
