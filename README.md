@@ -1,10 +1,71 @@
 # Election Voter Analysis in 2020 United States Election 
 
+## About the Data
+This dataset provides a combination of demographic information at the county level in the states and the results of the 2020 US Presidential Election for each county. 
+
+Here's a breakdown of the columns:
+
+Demographic Data (County Level):
+
+- CensusId: A unique identifier for the county.
+State: The state, which is consistently "Alabama" in this subset.
+- County: The name of the county. Note that some county names have special characters or inconsistencies (e.g., "Autauga", "Baldwin", "Barbour!", "Bibb!", "Blount", etc.).
+- TotalPop: The total population of the county.
+- Men: The number of men in the county.
+- Women: The number of women in the county.
+- Hispanic: The percentage of the population that is Hispanic.
+- White: The percentage of the population that is White.
+- Black: The percentage of the population that is Black.
+- Native: The percentage of the population that is Native American.
+- Asian: The percentage of the population that is Asian.
+- Pacific: The percentage of the population that is Pacific Islander.
+- Citizen: The total number of citizens in the county.
+- Income: The median household income in the county.
+- IncomeErr: The margin of error for the median household income.
+- IncomePerCap: The per capita income in the county.
+- IncomePerCapErr: The margin of error for the per capita income.
+- Poverty: The percentage of the population living below the poverty line.
+- ChildPoverty: The percentage of children living below the poverty line.
+- Professional: The percentage of the employed population working in professional occupations.
+- Service: The percentage of the employed population working in service occupations.
+- Office: The percentage of the employed population working in office occupations.
+- Construction: The percentage of the employed population working in construction occupations.
+- Production: The percentage of the employed population working in production occupations.
+- Drive: The percentage of commuters who drive alone.
+- Carpool: The percentage of commuters who carpool.
+- Transit: The percentage of commuters who use public transit.
+- Walk: The percentage of commuters who walk to work.
+- OtherTransp: The percentage of commuters who use other forms of transportation.
+- WorkAtHome: The percentage of workers who work from home.
+- MeanCommute: The average commute time in minutes.
+- Employed: The total number of employed people in the county.
+- PrivateWork: The percentage of employed people working in the private sector.
+- PublicWork: The percentage of employed people working in the public sector.
+- SelfEmployed: The percentage of employed people who are self-employed.
+- FamilyWork: The percentage of employed people working in family businesses.
+- Unemployment: The unemployment rate in the county.
+
+
+
+- candidate: The name of the presidential candidate. The data includes results for Donald Trump, Joe Biden, Jo Jorgensen, and write-in votes.
+- party: The political party of the candidate (REP, DEM, LIB, WRI).
+- total_votes: The total number of votes received by the candidate in that county.
+- won: A boolean value indicating whether the candidate won the popular vote in that specific county (TRUE/FALSE).
+
+Calculated Percentages:
+
+- WomenPercentage: The percentage of women in the total population of the county.
+menPercentage: The percentage of men in the total population of the county.
+- publicWorkPercent: The percentage of the total population working in the public sector (calculated from PublicWork and Employed). 
+
+IncomeCategory: A categorical variable derived from the "Income" column, with values like "High", "Medium", and "Low"
+
 # How Did Income Level and Employment Influence Voter Turnout and Voter Influence in the 2020 U.S. Election?
 
 Understanding the dynamics between socioeconomic status and electoral outcomes helps reveal which demographics drive political power in America. In this section, we explore geospatial patterns in voter turnout and party dominance by income and employment levels across the United States, using data from the 2020 general election.
 
 ---
+
 
 ## Total Votes by State
 
