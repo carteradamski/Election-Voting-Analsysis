@@ -9,7 +9,7 @@ Demographic Data (County Level):
 
 - CensusId: A unique identifier for the county.
 State: The state, which is consistently "Alabama" in this subset.
-- County: The name of the county. Note that some county names have special characters or inconsistencies (e.g., "Autauga", "Baldwin", "Barbour!", "Bibb!", "Blount", etc.).
+- County: The name of the county. 
 - TotalPop: The total population of the county.
 - Men: The number of men in the county.
 - Women: The number of women in the county.
@@ -47,7 +47,7 @@ State: The state, which is consistently "Alabama" in this subset.
 
 
 
-- candidate: The name of the presidential candidate. The data includes results for Donald Trump, Joe Biden, Jo Jorgensen, and write-in votes.
+- candidate: The name of the presidential candidate. The data includes results for Donald Trump, Joe Biden, etc.
 - party: The political party of the candidate (REP, DEM, LIB, WRI).
 - total_votes: The total number of votes received by the candidate in that county.
 - won: A boolean value indicating whether the candidate won the popular vote in that specific county (TRUE/FALSE).
