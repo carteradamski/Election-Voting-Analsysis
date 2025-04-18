@@ -59,7 +59,7 @@ fig.show()
 ```
 
 **Visualization:**
-[View Visual Plot](Screenshot 2025-04-18 110610.png)
+![View Visual Plot](Screenshot 2025-04-18 110610.png)
 
 ---
 
