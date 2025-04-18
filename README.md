@@ -270,34 +270,6 @@ The inverse plot has an even weaker correlation. This lack of correlation shows 
 -**Conclusion:** In the future, we can't make broad assumptions regarding the wealth of counties based only on how wealthy it's average person is, since it has been proven that wellness markers such as unemployment and poverty are not correlated to IncomePerCapita
 
 
-## Income and Poverty Rate Analysis
-
-This analysis visualizes the relationship between **Income Per Capita** and **Income**, with the **Poverty Rate** represented by color. Below is a breakdown of the key components of the scatter plot and insights derived from it.
-
-### Scatter Plot Overview:
-- **X-axis (Income)**: Represents the income level, likely average or median income, in a given area or population.
-- **Y-axis (Income Per Capita)**: Represents the income per person in that area or population.
-- **Color Encoding**: 
-  - The color of each dot corresponds to the **Poverty Rate**, as indicated by the color bar on the right.
-  - **Lower Poverty Rates** are depicted with yellowish hues.
-  - **Higher Poverty Rates** are depicted with darker purple hues.
-
-### Observations and Interpretations:
-- **Positive Correlation**: There is a clear positive correlation between **Income** and **Income Per Capita**. As **Income** increases, **Income Per Capita** also tends to increase.
-- **Impact of Poverty Rate**: The color gradient reveals how the **Poverty Rate** relates to both **Income** and **Income Per Capita**.
-  - **Lower Income** and **Income Per Capita** tend to have higher **Poverty Rates** (represented by darker purple dots).
-  - **Higher Income** and **Income Per Capita** tend to have lower **Poverty Rates** (represented by yellowish dots).
-- **Strength of Relationship**: The data points form a relatively tight cluster, suggesting a strong relationship between the variables. However, there is still some scatter, indicating that other factors also influence **Income** and **Income Per Capita**.
-
-### Potential Insights and Further Analysis:
-- **Socioeconomic Factors**: This visualization highlights the link between **Income**, **Income Per Capita**, and **Poverty**. Further analysis could explore the underlying socioeconomic factors contributing to these relationships.
-- **Policy Implications**: Understanding these relationships can inform policies aimed at addressing poverty and improving economic well-being.
-- **Outliers**: Identifying any outliers (data points far from the general trend) could reveal unique situations or errors in the data.
-
-In conclusion, this scatter plot effectively demonstrates the relationship between **Income**, **Income Per Capita**, and **Poverty Rate**, suggesting that areas with higher income levels generally have lower poverty rates. This type of visualization is crucial for understanding socioeconomic patterns and informing policy decisions.
-
-
-
 ## Modeling the Influence of Socioeconomic Factors on Voter Behavior
 
 To complement our geospatial analysis, we implemented regression and classification models to **quantify the relationship between income, unemployment, and voting behavior** at the county level. Our goal was to assess whether employment and other socioeconomic features can predict **income levels**, and by extension, voter turnout and influence.
