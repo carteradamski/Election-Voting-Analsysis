@@ -134,8 +134,7 @@ Each state reveals stark differences in party dominance at the county level — 
 
 ## Using Regression to try and Make Sense of Data
 
-- **Using Linear Regression** Take two values you may consider to be heavily correlated, Poverty rate in a county and IncomePerCapita in the same county, You would think these two values would heavily correlate, but as you can see from the Linear Regression Model, that is not true, one big takeaway from using regression is to isolate two variables and see how well each of them correlate.
-
+- **Using Linear Regression** Take two values you may consider to be heavily correlated, Poverty rate in a county and IncomePerCapita in the same county, You would think these two values would heavily correlate, but as you can see from the Linear Regression Model, that is not true. One big takeaway from using regression is to isolate two variables and see how well each of them correlate.
 
 
 ```python
@@ -171,7 +170,7 @@ plt.show()
 ```
 [View Visual](Screenshot 2025-04-17 171325.png)
 
-You can see that the data is not as correlated as you may expect, but you can use an R-Squared score to determine how correlated these values are (1 being perfect correlation, 0 being no correlation), this R-Squared score of about .53 indicates a weak Linear correlation to these variables. These Variables may have an Inverse Relationships
+It is apparent that the data is not as correlated as one may expect, but we can use an R-Squared score to determine how correlated these values are (1 being perfect correlation, 0 being no correlation), this R-Squared score of about .53 indicates a weak linear correlation to these variables. These variables may have an inverse relationship.
 
 
 
@@ -211,13 +210,38 @@ print(f"R² Score (Inverse Model): {r2:.4f}")
 ```
 [View Visual](Screenshot 2025-04-17 170511.png)
 
-As you can see, the Inverse Plot has an even weaker correlation. These correlations, or lack of correlations, show that you can't use IncomePerCapita as a relaible metric to determine the financial well-being of a county, because a county with a High IncomePerCapita could mean that either the wealth is concentrated to a few people, leaving a high number in poverty, or that the wealth is spread evenly and that few in the county are in poverty, You can also see the lack of connection between IncomePerCapita and Unemployment
+The inverse plot has an even weaker correlation. This lack of correlation shows that we can't use IncomePerCapita as a relaible metric to determine the financial well-being of a county, because a county with a high IncomePerCapita could mean that either the wealth is concentrated to a few people, leaving a high number in poverty, or that the wealth is spread evenly and that few in the county are in poverty, There is also a lack of connection between IncomePerCapita and Unemployment. 
 
 [View Visual](Screenshot 2025-04-17 170801.png)
 
--**Conclusion:** In the future, we can't make broad assumptions regarding the wealth of Counties based only on how Wealthy it's average person is, since it has been proven that wellness markers such as Unemployment and Poverty are not correlated to IncomePerCapita
+-**Conclusion:** In the future, we can't make broad assumptions regarding the wealth of counties based only on how wealthy it's average person is, since it has been proven that wellness markers such as unemployment and poverty are not correlated to IncomePerCapita
 
 
+## Income and Poverty Rate Analysis
+
+This analysis visualizes the relationship between **Income Per Capita** and **Income**, with the **Poverty Rate** represented by color. Below is a breakdown of the key components of the scatter plot and insights derived from it.
+
+### Scatter Plot Overview:
+- **X-axis (Income)**: Represents the income level, likely average or median income, in a given area or population.
+- **Y-axis (Income Per Capita)**: Represents the income per person in that area or population.
+- **Color Encoding**: 
+  - The color of each dot corresponds to the **Poverty Rate**, as indicated by the color bar on the right.
+  - **Lower Poverty Rates** are depicted with yellowish hues.
+  - **Higher Poverty Rates** are depicted with darker purple hues.
+
+### Observations and Interpretations:
+- **Positive Correlation**: There is a clear positive correlation between **Income** and **Income Per Capita**. As **Income** increases, **Income Per Capita** also tends to increase.
+- **Impact of Poverty Rate**: The color gradient reveals how the **Poverty Rate** relates to both **Income** and **Income Per Capita**.
+  - **Lower Income** and **Income Per Capita** tend to have higher **Poverty Rates** (represented by darker purple dots).
+  - **Higher Income** and **Income Per Capita** tend to have lower **Poverty Rates** (represented by yellowish dots).
+- **Strength of Relationship**: The data points form a relatively tight cluster, suggesting a strong relationship between the variables. However, there is still some scatter, indicating that other factors also influence **Income** and **Income Per Capita**.
+
+### Potential Insights and Further Analysis:
+- **Socioeconomic Factors**: This visualization highlights the link between **Income**, **Income Per Capita**, and **Poverty**. Further analysis could explore the underlying socioeconomic factors contributing to these relationships.
+- **Policy Implications**: Understanding these relationships can inform policies aimed at addressing poverty and improving economic well-being.
+- **Outliers**: Identifying any outliers (data points far from the general trend) could reveal unique situations or errors in the data.
+
+In conclusion, this scatter plot effectively demonstrates the relationship between **Income**, **Income Per Capita**, and **Poverty Rate**, suggesting that areas with higher income levels generally have lower poverty rates. This type of visualization is crucial for understanding socioeconomic patterns and informing policy decisions.
 
 
 
@@ -363,7 +387,7 @@ These results indicate that income can be accurately modeled using socioeconomic
 By modeling these relationships, we demonstrate that **economic indicators like income and employment status are closely tied to political influence and turnout**, offering a data-driven lens into electoral inequality.
 
 
-## outside research
+## Outside research
 In the 2024 election, Vice President Kamala Harris's defeat by former President Donald Trump was partly attributed to a significant decline in voter turnout among traditionally Democratic-leaning groups, including young voters, immigrants, and low-income communities. A study by Blue Rose Research, led by data scientist David Shor, revealed that many of these voters shifted towards the Republican Party, driven by economic concerns such as the rising cost of living. This shift suggests that economic issues, rather than traditional party loyalty, played a pivotal role in influencing voter behavior (Vox) .
 
 Additionally, a report from the Associated Press highlighted that in Bibb County, Georgia—a predominantly Black and impoverished area—approximately 47,000 eligible voters abstained from voting in the 2020 election. This disengagement was attributed to economic hardships and a lack of trust in the political system. Despite efforts to mobilize these voters, many remained apathetic, prioritizing immediate survival needs over electoral participation (AP News).
